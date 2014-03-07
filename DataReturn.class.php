@@ -55,7 +55,7 @@ class DataReturn{	// class start
 
 	//輸出JSON格式數據,如有callback參數則返回JSONP格式
 	private function json_return(){
-		header('content-type:text/html;charset=utf-8');
+		header('content-type:application/json;charset=utf-8');
 		if(empty($this->callback)){
 			echo json_encode($this->returnData);
 		}else{
